@@ -1,6 +1,6 @@
 <template>
     <div>
-        <span class="test">文字</span>
+        <span class="test drag">文字</span>
     </div>
 </template>
 

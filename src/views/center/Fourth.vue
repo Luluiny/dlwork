@@ -4,7 +4,12 @@
       <el-cascader
         :options="options"
         v-model="selectedOptions"
-        @change="handleChange">
+        @change="handleChange"
+         draggable
+         :allow-drop="allowDrop"
+        :allow-drag="allowDrag"
+        >
+       
       </el-cascader>
     </div>
     </div>
@@ -14,7 +19,7 @@
 <script> export default {
     data() {
       return {
-        options: [{
+        options: [{ 
           value: 'zhinan',
           label: '指南',
           children: [{

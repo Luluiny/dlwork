@@ -49,9 +49,9 @@
     </grid-layout>
     <!-- <tablecomponent  style="display:none;" id="table_demo"></tablecomponent> -->
     <div class="component_box" style="display:none;" >
-        <tablecomponent id="tablecomponent" :width='idarray[0].width' :height='idarray[0].height' ></tablecomponent>
-        <datacomponent id="datacomponent" :width='idarray[1].width' :height='idarray[1].height'></datacomponent>
-        <selectcomponent id="selectcomponent" :width='idarray[2].width' :height='idarray[2].height'></selectcomponent>
+        <tablecomponent id="tablecomponent"  ></tablecomponent>
+        <datacomponent id="datacomponent" ></datacomponent>
+        <selectcomponent id="selectcomponent" ></selectcomponent>
     </div>
   </div>
 </template>
@@ -123,7 +123,6 @@ export default {
     tem_hold: function() {},
     tem_edilt: function() {},
     tem_tem: function() {
-      var id=
       //增加一个模板
       testLayout.push({ x: 0, y: 0, w: 12, h: 5, i: this.addtem, id: "6" });
       console.log("testLayout", testLayout);
@@ -134,7 +133,7 @@ export default {
         item.x = x;
       }
       return item;
-    },
+    }, 
     moveEvent: function(i, newX, newY, e) {
       //开始移动
       // console.log(this)
